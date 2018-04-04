@@ -23,6 +23,6 @@ public class FollowLinkTest extends TestBase {
 
         page.followLink();
 
-        assertFalse(page.isOnPage());
+        assertTrue(page.isOnPage());
     }
 }
