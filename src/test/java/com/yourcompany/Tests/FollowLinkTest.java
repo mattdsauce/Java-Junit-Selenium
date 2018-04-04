@@ -23,7 +23,7 @@ public class FollowLinkTest extends TestBase {
 
         page.followLink();
 
-        assertFalse(page.isOnPage());
-        //assertTrue(driver.getTitle().toLowerCase().contains("thiswillfail"));
+        //assertFalse(page.isOnPage());
+        assertTrue(driver.getTitle().toLowerCase().contains("thiswillfail"));
     }
 }
