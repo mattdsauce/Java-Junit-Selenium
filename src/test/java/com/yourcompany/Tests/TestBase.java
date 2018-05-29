@@ -124,6 +124,9 @@ public class TestBase implements SauceOnDemandSessionIdProvider {
         if (buildTag != null) {
             capabilities.setCapability("build", buildTag);
         }
+
+        System.out.println("username: " + username + ", seleniumURI: " + seleniumURI);
+
         this.driver = new RemoteWebDriver(
                 new URL("https://" + username+ ":" + accesskey + seleniumURI +"/wd/hub"),
                 capabilities);
